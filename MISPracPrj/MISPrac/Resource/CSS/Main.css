@@ -1,0 +1,541 @@
+﻿body {
+	font:75% Arial, Helvetica, sans-serif;
+	line-height:140%;
+	background-color:White;
+    height: 100%;
+	margin:0;
+	padding:1px 6px 20px 6px;
+}
+
+.PaperInfo div {
+    padding: 5px;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.paperTitle {
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.paperPublishIn {
+}
+
+.paperAbstract {
+    color: #999;
+}
+
+
+.TableNamesList span {
+    font-size: 1em;
+    color: #111;
+    line-height: 1.8em;
+    text-wrap: normal;
+    word-wrap: break-word;  
+    word-break: normal;  
+}
+
+.ContentBoxRow, .inner * {
+    text-decoration: none;
+}
+
+.ContentBoxRow {
+    /*padding: 2em 3em 1.5em 3em;*/
+    padding: 1em;
+    
+    flex-direction: column;
+    vertical-align: baseline;
+}
+
+.ContentBoxColumn {
+    /*padding: 2em 3em 1.5em 3em;*/
+    padding: 1em;
+    
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
+    align-items: center;
+}
+
+.flexBoxAsRow {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    width: 100%;
+    flex-direction: row;
+}
+
+
+.flexBoxAsColum{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    width: 100%;
+            
+}
+.flexBoxAsColum > div{
+    
+    width:1%;
+    -webkit-box-flex:1 ;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    word-break: break-all;
+    align-items: center;
+   
+}
+
+.boxShadow {
+    box-shadow: 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
+}
+
+.boxColum {
+    flex-grow: 2;
+    padding: 5px;
+}
+
+.box .subTitle {
+    font-size: 1.75em;
+    line-height: 2em;
+    font-weight: 300;
+    color: #999;
+}
+
+.box .Title {
+    font-size: 3em;
+    line-height: 1.8em;
+    font-weight: 500;
+    color: #333;
+}
+
+.subTitle span {
+    margin-left: 5px;
+}
+
+.Instruction {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #666;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.box {
+    flex-grow: 1;
+}
+
+.box2 {
+    flex-grow: 2;
+}
+
+.box3 {
+    flex-grow: 3;
+}
+
+.box4 {
+    flex-grow: 4;
+}
+
+.box5 {
+    flex-grow: 5;
+}
+
+.box6 {
+    flex-grow: 6;
+}
+
+.box7 {
+    flex-grow: 7;
+}
+
+.box .post {
+    position: relative;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textVCenter {
+    vertical-align: middle;
+}
+
+/*--------------------------------------------*/
+.SiteMenu {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    background-color: White;
+}
+
+.ThemeRoller .__Label__ {
+    text-align: center;
+    font-weight: bold;
+    min-width: 70px;
+}
+
+.HTMLPageContent {
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+td {
+    padding-left: 3px;
+}
+.NavTreeContainer {
+    height: 400px;
+}
+.TableItemConfig {
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+}
+
+.sspu_Left .ui-accordion .ui-accordion-content {
+    padding-left: 3px;
+}
+
+.HolePage {
+    min-width: 850px;
+}
+._OneDynamicCloumnInputRow
+{
+	clear:both;
+	float:left;
+	width:100%;
+	padding:3px 0;
+}
+
+._OneDynamicCloumnInputRow button,
+._OneDynamicCloumnInputRow .Uploadify
+{
+	float:left;
+}
+
+a.__Core_fg-button
+{
+    width:140px;
+}
+ 
+div.__Label__,span.jCheckbox_Lable
+{
+    width:auto;
+	min-width:120px;
+	float:left;
+	margin-top:5px;
+}
+
+._OneDynamicCloumnInputRow  input.ui-widget
+{
+	height:1.5em !important;
+	width:170px;
+}
+	
+.selectedRow td
+{
+	
+	border-top:solid 1px Red;
+	border-bottom:solid 1px Red;
+}
+
+.inputRow
+{
+	width:250px;
+	height:50px;
+}
+
+.inputRow_Lable
+{
+	width:80px;
+	height:50px;
+}
+
+.header
+{
+	width:100%;
+	height:100px;
+	float:left;
+	border-top-right-radius:9px;
+	border-top-left-radius:9px;
+}
+
+.head_Logo
+{
+    float:left;
+    width:95px;
+    height:80px;
+    background-repeat:no-repeat;
+    margin-left:30px;
+    margin-top:10px;
+    background-image:url("/Resource/Image/Icons/SSPU.png");
+}
+
+.head_LogoFirstPrj {
+    float:left;
+    width:172px;
+    height:65px;
+    background-repeat:no-repeat;
+    margin-left:10px;
+    margin-top:20px;
+    background-image:url("/Resource/Image/Icons/firstlogo.png");
+}
+
+.head_Title {
+    float: left;
+    width: 507px;
+    background-repeat: no-repeat;
+    height: 41px;
+    margin-left: 10px;
+    margin-top: 35px;
+    background-image: url("/Resource/Image/Icons/title.png");
+}
+
+
+
+.ThemeSelectorArear 
+{
+    width: 140px;
+    float: right;
+    margin-top:55px;
+}
+
+.LoginArea
+{
+	width:65px;
+	float:right;
+	margin-right:20px;
+	margin-top:50px;
+	
+	
+}
+
+.LoginArea input,.LoginArea button
+{
+	float:right;
+}
+
+.pageContent
+{
+	_height:500px;
+	float:left;
+	min-height:500px; 
+	/*background-image:url("/Resources/SAIForSSPULab/Images/ContentBG.jpg");
+	background-color:#ffffff;
+	background-repeat:repeat-x;
+	border-right:1px solid #D6D6D6;
+	border-left:1px solid #D6D6D6;*/
+	width:100%;
+	height:100%;
+	border-top:none !important;
+	border-bottom:none !important;
+}
+
+.pageContent_Left
+{
+	width:200px;
+	height:100%;
+	float:left;
+	padding:5px 0 0 5px;
+	
+	border:none !important;
+}
+
+.pageContent_Middle
+{
+	padding:5px 5px 5px 20px;
+	height:100%;
+	min-height:600px;
+}
+
+.silverLightClass
+{
+	min-height:600px;
+	height:100%;
+}
+
+
+.pageContent_Right
+{
+	margin-left:220px;
+	
+	border:none !important;
+	/*border-right:1px solid #D6D6D6;*/
+}
+
+.footer
+{
+    float:left;
+    width:100%;
+    height:60px;
+    background-image:url("/Resources/SAIForSSPULab/Images/BG_Footer_Mid.gif");
+    /*border-right:1px solid #D6D6D6;
+	border-left:1px solid #D6D6D6;
+	border-bottom:1px solid #D6D6D6;*/
+	
+	border-top:none !important;
+	
+	border-bottom-left-radius:9px;
+	border-bottom-right-radius:9px;
+}
+
+.JMenu
+{
+	margin-top:65px;
+	width:120px;
+}
+
+._JMenuSubMenu
+{
+	float:left;
+	margin-left:1px;
+   
+}
+
+.css_right
+{
+	float:right;
+}
+
+.css_left
+{
+	float:left;
+}
+
+.Fieldset_JDataTable
+{
+	margin-top:10px;
+}
+
+.jdataTableContainer
+{
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+li.jstree-open a:hover,li.jstree-leaf a:hover
+{
+	background:#e7f4f9;
+	color:#333;
+	border:1px solid #e7f4f9; 
+	padding:0 2px 0 1px;
+}
+
+.InputRow
+{
+	width:100%;
+	float:left;
+	margin-top:10px;
+}
+
+.InputRow_Labe
+{
+	width:120px;
+	float:left;
+	text-indent:10px;
+}
+
+.InputRow_CheckBox
+{
+	float:left;
+}
+.InputRow_Button
+{
+	float:left;
+	margin-left:50px;
+   
+}
+
+
+.MainContentContainer
+{
+	float:left;
+	width:100%;
+	margin-top:10px;
+	
+}
+
+
+.LoginForm div.__Label__
+{
+	width:80px;
+	float:left;
+	margin-top:5px;
+}
+
+
+
+.__JTableimageColumn_ 
+{
+    width:80px ;
+}
+
+.__SSPUTable_ tr
+{
+    height:2em ;
+}
+
+.DataTables_sort_wrapper span
+{
+    float:right;
+    margin-top:-18px\9;
+}
+
+.__RecorderHistory_PreDelete {
+    color: red;
+}
+
+.__RecorderHistory_PreModification {
+    color: darkgreen;
+}
+
+.__RecorderHistory_Add {
+    color: blue;
+}
+
+.__RecorderHistory_AfterModification {
+    color: firebrick;
+}
+
+.MyTeamInfoTree a { white-space:normal !important; height: auto; padding:1px 2px; } 
+.MyTeamInfoTree li > ins { vertical-align:top; }
+.MyTeamInfoTree .jstree-hovered, #demo4 .jstree-clicked { border:0; }
+
+.ProjFileType {
+    width: 16px;
+    height: 16px;
+    border: none;
+}
+
+div.__Label__ {
+    float: left;
+}
+
+.NPOIHtmlTableContainer table {
+    width: 100%;
+}
+
+.NPOIHtmlTableContainer tr , .NPOIHtmlTableContainer td {
+    border: 1px solid;
+}
+
+.NPOIHtmlTableContainer .rownumber {
+    width: 20px;
+    
+}
+
+
+.TableItemConfig_LeftRoot li, .TableItemConfigPages li{
+    padding-top: 15px;
+}
+
+.SetPageTypeContent , .SetPageTypeContent input {
+    margin-top: 15px;
+}
+
+.SetPageTypeContent label
+{
+    margin-top:10px;
+    min-width:120px;
+    text-align:left;
+}

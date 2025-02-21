@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85C8E9AE-AE4F-4679-B557-D6FD0DAE2C0F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MISPrac</RootNamespace>
+    <AssemblyName>MISPrac</AssemblyName>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SSPUCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resource\DLL\SSPUCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ConfigByUI\ConfigByTableName.aspx" />
+    <Content Include="ConfigByUI\ConfigNavigateTree.aspx" />
+    <Content Include="ConfigByUI\ConfigTableUI.aspx" />
+    <Content Include="ConfigByUI\ConfigUserGroup.aspx" />
+    <Content Include="ConfigByUI\ConfigUserWithGroup.aspx" />
+    <Content Include="ConfigByUI\EditUserInfo.aspx" />
+    <Content Include="ConfigByUI\NotLocalizedKeys.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorInfo.aspx" />
+    <Content Include="GroupPage\ShowDefTable.aspx" />
+    <Content Include="GroupPage\ShowHtCnt.aspx" />
+    <Content Include="GroupPage\ShowPDFFile.aspx" />
+    <Content Include="GroupPage\ShowTables.aspx" />
+    <Content Include="GroupPage\ShowVides.aspx" />
+    <Content Include="OnNoRightPage.aspx" />
+    <Content Include="PersonalSetting.aspx" />
+    <Content Include="Resource\CKEditor4\adapters\jquery.js" />
+    <Content Include="Resource\CKEditor4\build-config.js" />
+    <Content Include="Resource\CKEditor4\ckeditor.js" />
+    <Content Include="Resource\CKEditor4\config.js" />
+    <Content Include="Resource\CKEditor4\contents.css" />
+    <Content Include="Resource\CKEditor4\lang\en.js" />
+    <Content Include="Resource\CKEditor4\lang\zh-cn.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\az.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\en-au.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\es-mx.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="Resource\CKEditor4\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Resource\CKEditor4\plugins\about\dialogs\about.js" />
+    <Content Include="Resource\CKEditor4\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="Resource\CKEditor4\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\kama\balloonpanel.css" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\moono-lisa\balloonpanel.css" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\moono-lisa\images\close.png" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\moono\balloonpanel.css" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\moono\images\close.png" />
+    <Content Include="Resource\CKEditor4\plugins\balloonpanel\skins\moono\images\hidpi\close.png" />
+    <Content Include="Resource\CKEditor4\plugins\balloontoolbar\skins\default.css" />
+    <Content Include="Resource\CKEditor4\plugins\balloontoolbar\skins\kama\balloontoolbar.css" />
+    <Content Include="Resource\CKEditor4\plugins\balloontoolbar\skins\moono-lisa\balloontoolbar.css" />
+    <Content Include="Resource\CKEditor4\plugins\balloontoolbar\skins\moono\balloontoolbar.css" />
+    <Content Include="Resource\CKEditor4\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Resource\CKEditor4\plugins\colordialog\dialogs\colordialog.css" />
+    <Content Include="Resource\CKEditor4\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Resource\CKEditor4\plugins\copyformatting\styles\copyformatting.css" />
+    <Content Include="Resource\CKEditor4\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Resource\CKEditor4\plugins\dialog\styles\dialog.css" />
+    <Content Include="Resource\CKEditor4\plugins\div\dialogs\div.js" />
+    <Content Include="Resource\CKEditor4\plugins\easyimage\dialogs\easyimagealt.js" />
+    <Content Include="Resource\CKEditor4\plugins\easyimage\styles\easyimage.css" />
+    <Content Include="Resource\CKEditor4\plugins\find\dialogs\find.js" />
+    <Content Include="Resource\CKEditor4\plugins\flash\dialogs\flash.js" />
+    <Content Include="Resource\CKEditor4\plugins\flash\images\placeholder.png" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\button.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\form.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\radio.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\select.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Resource\CKEditor4\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Resource\CKEditor4\plugins\icons.png" />
+    <Content Include="Resource\CKEditor4\plugins\icons_hidpi.png" />
+    <Content Include="Resource\CKEditor4\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Resource\CKEditor4\plugins\iframe\images\placeholder.png" />
+    <Content Include="Resource\CKEditor4\plugins\imagebase\styles\imagebase.css" />
+    <Content Include="Resource\CKEditor4\plugins\image\dialogs\image.js" />
+    <Content Include="Resource\CKEditor4\plugins\image\images\noimage.png" />
+    <Content Include="Resource\CKEditor4\plugins\link\dialogs\anchor.js" />
+    <Content Include="Resource\CKEditor4\plugins\link\dialogs\link.js" />
+    <Content Include="Resource\CKEditor4\plugins\link\images\anchor.png" />
+    <Content Include="Resource\CKEditor4\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Resource\CKEditor4\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Resource\CKEditor4\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Resource\CKEditor4\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Resource\CKEditor4\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="Resource\CKEditor4\plugins\magicline\images\icon.png" />
+    <Content Include="Resource\CKEditor4\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Resource\CKEditor4\plugins\pastefromgdocs\filter\default.js" />
+    <Content Include="Resource\CKEditor4\plugins\pastefromword\filter\default.js" />
+    <Content Include="Resource\CKEditor4\plugins\pastetools\filter\common.js" />
+    <Content Include="Resource\CKEditor4\plugins\preview\preview.html" />
+    <Content Include="Resource\CKEditor4\plugins\scayt\dialogs\dialog.css" />
+    <Content Include="Resource\CKEditor4\plugins\scayt\dialogs\options.js" />
+    <Content Include="Resource\CKEditor4\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Resource\CKEditor4\plugins\scayt\skins\moono-lisa\scayt.css" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_address.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_div.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_p.png" />
+    <Content Include="Resource\CKEditor4\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\envelope.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\envelope.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\heart.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\heart.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\kiss.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\kiss.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Resource\CKEditor4\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\az.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\en-au.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\es-mx.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ro.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\sr-latn.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\sr.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Resource\CKEditor4\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Resource\CKEditor4\plugins\tableselection\styles\tableselection.css" />
+    <Content Include="Resource\CKEditor4\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Resource\CKEditor4\plugins\table\dialogs\table.js" />
+    <Content Include="Resource\CKEditor4\plugins\templates\dialogs\templates.css" />
+    <Content Include="Resource\CKEditor4\plugins\templates\dialogs\templates.js" />
+    <Content Include="Resource\CKEditor4\plugins\templates\templates\default.js" />
+    <Content Include="Resource\CKEditor4\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Resource\CKEditor4\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Resource\CKEditor4\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Resource\CKEditor4\plugins\widget\images\handle.png" />
+    <Content Include="Resource\CKEditor4\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Resource\CKEditor4\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Resource\CKEditor4\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Resource\CKEditor4\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Resource\CKEditor4\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="Resource\CKEditor4\plugins\wsc\skins\moono-lisa\wsc.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\dialog.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\editor.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\editor_ie.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\icons.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\arrow.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\close.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\lock.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\refresh.png" />
+    <Content Include="Resource\CKEditor4\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="Resource\CKEditor4\styles.js" />
+    <Content Include="Resource\CKEditor4\vendor\promise.js" />
+    <Content Include="Resource\CKEditor5\Classic\ckeditor.js" />
+    <Content Include="Resource\CKEditor5\Classic\translations\zh-cn.js" />
+    <Content Include="Resource\CKEditor5\Inline\ckeditor.js" />
+    <Content Include="Resource\CKEditor5\Inline\index.html" />
+    <Content Include="Resource\CKEditor5\Inline\translations\af.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ar.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ast.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\az.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\bg.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ca.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\cs.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\da.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\de-ch.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\de.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\el.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\en-au.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\en-gb.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\eo.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\es.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\et.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\eu.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\fa.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\fi.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\fr.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\gl.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\gu.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\he.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\hr.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\hu.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\id.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\it.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ja.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\km.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\kn.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ko.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ku.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\lt.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\lv.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ms.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\nb.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ne.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\nl.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\no.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\oc.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\pl.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\pt-br.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\pt.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ro.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ru.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\si.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\sk.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\sq.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\sr-latn.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\sr.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\sv.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\tr.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\tt.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\ug.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\uk.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\vi.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\zh-cn.js" />
+    <Content Include="Resource\CKEditor5\Inline\translations\zh.js" />
+    <Content Include="Resource\CSS\Main.css" />
+    <Content Include="Resource\CSS\PDF\kendo.default-v2.min.css" />
+    <Content Include="Resource\DLL\NPOI.dll" />
+    <Content Include="Resource\DLL\NPOI.OOXML.dll" />
+    <Content Include="Resource\DLL\NPOI.OpenXml4Net.dll" />
+    <Content Include="Resource\DLL\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Resource\DLL\SSPUCore.dll" />
+    <Content Include="Resource\Image\404error.png" />
+    <Content Include="Resource\Image\404errorBG.jpg" />
+    <Content Include="Resource\Image\Icons\16px\all.png" />
+    <Content Include="Resource\Image\Icons\16px\application.png" />
+    <Content Include="Resource\Image\Icons\16px\code.png" />
+    <Content Include="Resource\Image\Icons\16px\css.png" />
+    <Content Include="Resource\Image\Icons\16px\db.png" />
+    <Content Include="Resource\Image\Icons\16px\directory.png" />
+    <Content Include="Resource\Image\Icons\16px\doc.png" />
+    <Content Include="Resource\Image\Icons\16px\file.png" />
+    <Content Include="Resource\Image\Icons\16px\film.png" />
+    <Content Include="Resource\Image\Icons\16px\flash.png" />
+    <Content Include="Resource\Image\Icons\16px\folder_open.png" />
+    <Content Include="Resource\Image\Icons\16px\Home.png" />
+    <Content Include="Resource\Image\Icons\16px\Home2.png" />
+    <Content Include="Resource\Image\Icons\16px\html.png" />
+    <Content Include="Resource\Image\Icons\16px\java.png" />
+    <Content Include="Resource\Image\Icons\16px\linux.png" />
+    <Content Include="Resource\Image\Icons\16px\music.png" />
+    <Content Include="Resource\Image\Icons\16px\pdf.png" />
+    <Content Include="Resource\Image\Icons\16px\php.png" />
+    <Content Include="Resource\Image\Icons\16px\picture.png" />
+    <Content Include="Resource\Image\Icons\16px\ppt.png" />
+    <Content Include="Resource\Image\Icons\16px\psd.png" />
+    <Content Include="Resource\Image\Icons\16px\ruby.png" />
+    <Content Include="Resource\Image\Icons\16px\script.png" />
+    <Content Include="Resource\Image\Icons\16px\spinner.gif" />
+    <Content Include="Resource\Image\Icons\16px\txt.png" />
+    <Content Include="Resource\Image\Icons\16px\user.png" />
+    <Content Include="Resource\Image\Icons\16px\xls.png" />
+    <Content Include="Resource\Image\Icons\16px\zip.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\asp.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\TableF.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\html.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\clients.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\database.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\group.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\Key.png" />
+    <Content Include="Resource\Image\Icons\SSPU.svg" />
+    <Content Include="Resource\Image\Icons\SSPU.png" />
+    <Content Include="Resource\Image\Icons\title.png" />
+    <Content Include="Resource\Image\Icons\Title.svg" />
+    <Content Include="Resource\Image\Icons\TreeNode\paper.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\place.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\previous.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\search.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\Setting.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\table.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\trigger.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\user.png" />
+    <Content Include="Resource\Image\Icons\TreeNode\youtube.png" />
+    <Content Include="Resource\JS\Main.js" />
+    <Content Include="Resource\JS\PDF\kendo.all.min.js" />
+    <Content Include="Resource\JS\PDF\pdf.js" />
+    <Content Include="Resource\JS\PDF\pdf.worker.js" />
+    <Content Include="Resource\UploadedFile\Files\Key.png" />
+    <Content Include="Resource\UploadedFile\Files\Setting.png" />
+    <Content Include="Services\DoLogout.aspx" />
+    <Content Include="Services\FileManagerService.aspx" />
+    <Content Include="Services\TableOpSrv.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigByTableName.aspx.cs">
+      <DependentUpon>ConfigByTableName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigByTableName.aspx.designer.cs">
+      <DependentUpon>ConfigByTableName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigNavigateTree.aspx.cs">
+      <DependentUpon>ConfigNavigateTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigNavigateTree.aspx.designer.cs">
+      <DependentUpon>ConfigNavigateTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigTableUI.aspx.cs">
+      <DependentUpon>ConfigTableUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigTableUI.aspx.designer.cs">
+      <DependentUpon>ConfigTableUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigUserGroup.aspx.cs">
+      <DependentUpon>ConfigUserGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigUserGroup.aspx.designer.cs">
+      <DependentUpon>ConfigUserGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigUserWithGroup.aspx.cs">
+      <DependentUpon>ConfigUserWithGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\ConfigUserWithGroup.aspx.designer.cs">
+      <DependentUpon>ConfigUserWithGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\EditUserInfo.aspx.cs">
+      <DependentUpon>EditUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\EditUserInfo.aspx.designer.cs">
+      <DependentUpon>EditUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\MustLogin.Master.cs">
+      <DependentUpon>MustLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\MustLogin.Master.designer.cs">
+      <DependentUpon>MustLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigByUI\NotLocalizedKeys.aspx.cs">
+      <DependentUpon>NotLocalizedKeys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigByUI\NotLocalizedKeys.aspx.designer.cs">
+      <DependentUpon>NotLocalizedKeys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorInfo.aspx.cs">
+      <DependentUpon>ErrorInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorInfo.aspx.designer.cs">
+      <DependentUpon>ErrorInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPage\ShowDefTable.aspx.cs">
+      <DependentUpon>ShowDefTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupPage\ShowDefTable.aspx.designer.cs">
+      <DependentUpon>ShowDefTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPage\ShowHtCnt.aspx.cs">
+      <DependentUpon>ShowHtCnt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupPage\ShowHtCnt.aspx.designer.cs">
+      <DependentUpon>ShowHtCnt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPage\ShowPDFFile.aspx.cs">
+      <DependentUpon>ShowPDFFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupPage\ShowPDFFile.aspx.designer.cs">
+      <DependentUpon>ShowPDFFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPage\ShowTables.aspx.cs">
+      <DependentUpon>ShowTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupPage\ShowTables.aspx.designer.cs">
+      <DependentUpon>ShowTables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPage\ShowVides.aspx.cs">
+      <DependentUpon>ShowVides.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupPage\ShowVides.aspx.designer.cs">
+      <DependentUpon>ShowVides.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnNoRightPage.aspx.cs">
+      <DependentUpon>OnNoRightPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnNoRightPage.aspx.designer.cs">
+      <DependentUpon>OnNoRightPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalSetting.aspx.cs">
+      <DependentUpon>PersonalSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalSetting.aspx.designer.cs">
+      <DependentUpon>PersonalSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DoLogout.aspx.cs">
+      <DependentUpon>DoLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\DoLogout.aspx.designer.cs">
+      <DependentUpon>DoLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\FileManagerService.aspx.cs">
+      <DependentUpon>FileManagerService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\FileManagerService.aspx.designer.cs">
+      <DependentUpon>FileManagerService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\TableOpSrv.aspx.cs">
+      <DependentUpon>TableOpSrv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\TableOpSrv.aspx.designer.cs">
+      <DependentUpon>TableOpSrv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\UploadFile.ashx.cs">
+      <DependentUpon>UploadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Uploadify_FileManager.ashx.cs">
+      <DependentUpon>Uploadify_FileManager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBManager\DBManager.csproj">
+      <Project>{A0710E72-8ED3-4F01-9E38-964B342F7C3D}</Project>
+      <Name>DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Definition\Definition.csproj">
+      <Project>{1A7AAC26-B2BA-499C-923F-90D17BB6DB93}</Project>
+      <Name>Definition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfigByUI\MustLogin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configurations\AppSettings.config" />
+    <Content Include="Configurations\Localization.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resource\CKEditor4\CHANGES.md" />
+    <None Include="Resource\CKEditor4\LICENSE.md" />
+    <None Include="Resource\CKEditor4\README.md" />
+    <Content Include="Services\UploadFile.ashx" />
+    <Content Include="Services\Uploadify_FileManager.ashx" />
+    <Content Include="Site1.Master" />
+    <None Include="Resource\DB\MISPracV1.bak" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1080</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
