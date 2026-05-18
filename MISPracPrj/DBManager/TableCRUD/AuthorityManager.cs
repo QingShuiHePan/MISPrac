@@ -617,7 +617,7 @@ namespace DBManager
             condition.Add(TO_TableColumnAuthorityByUserGroup._GlobalNavTreeID, new List<string>() { AuthorityManager.Instance.CurrentNodeID.ToString() });
             condition.Add(TO_TableColumnAuthorityByUserGroup._UserGroupID, CurrentUserGroupIDs);
 
-            DataTable dt     = CachingManager.Instance.GetDataTable(tableName, condition, null, true);
+            DataTable dt     = CachingManager.Instance.GetDataTable(tableName, condition, null, false);
             int       result = 0;
             if (dt == null || dt.Rows.Count == 0)
             {
